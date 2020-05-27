@@ -5,7 +5,7 @@ import LeaderBoardCard from "./LeaderBoardCard";
 class LeaderBoard extends Component {
   render() {
     console.log("users", this.props.usersId);
-    const trophyColors = ["green", "orange", "whte"];
+    const trophyColors = ["green", "orange", "white"];
     return (
       <Fragment>
         {this.props.usersId.map((id, idx) => (

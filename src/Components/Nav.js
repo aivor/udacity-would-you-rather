@@ -45,7 +45,7 @@ class Nav extends Component {
               </NavLink>
             </li>
             <li className="nav-item pl-4">
-              <span className="text-primary"> hello, {user.name}</span>
+              <span className="text-secondary"> Hello, {user.name}</span>
               <img
                 src={user.avatarURL}
                 className="rounded-circle p-2"

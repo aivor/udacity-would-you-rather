@@ -42,11 +42,7 @@ class Login extends Component {
                     <option value="selectUser">select user</option>
                     {user &&
                       user.map((user) => (
-                        <option
-                          key={users[user].id}
-                          value={users[user].id}
-                          data-icon={users[user].avatarURL}
-                        >
+                        <option key={users[user].id} value={users[user].id}>
                           {users[user].name}
                         </option>
                       ))}
