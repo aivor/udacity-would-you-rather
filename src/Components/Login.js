@@ -85,7 +85,13 @@ const LoginHeader = () => (
 );
 const LoginBrand = () => (
   <div id="card-img-container">
-    <img className="card-image" alt="would you rather" src="/rsz_wyr.jpg" />
+    <img
+      className="card-image"
+      alt="would you rather"
+      src="/image.jpg"
+      width="250px"
+      height="150px"
+    />
   </div>
 );
 const LoginText = () => (
