@@ -1,38 +1,173 @@
-.App {
+.login-card,
+.newQuestion-card {
+  max-width: 30rem;
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+#card-img-container {
+  margin: 1em auto;
+}
+.login-btn {
+  color: white !important;
+}
+form {
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.new-question select,
+.new-question button,
+.new-question input,
+.login select,
+.login button {
+  width: 25rem !important;
+}
+select option {
+  color: black;
+}
+.formText {
+  color: #007bff;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.would-you-rather {
+  color: black;
+  display: block;
+  font-weight: bolder;
+  font-size: 1em;
+  margin-left: 16px;
+}
+.questionText {
+  margin-left: 16px;
+}
+.username {
+  color: white !important;
+}
+.username:hover {
+  color: red;
+}
+/* --- Home && Answered and unanswered component --- */
+.home-card,
+.poll-card,
+.leaderboard-card {
+  max-width: 33rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+}
+.questions-card {
+  margin: 1em;
+}
+.askBy {
+  color: black;
+  font-weight: bold;
+}
+.question-text {
+  color: black;
+  display: block;
+  font-weight: bolder;
+  font-size: 1.2em;
+} /* ----- answered and unanswerd polls ----*/
+.unanswered-poll button {
+  max-width: 20rem !important;
+}
+.unanswered-poll label {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+}
+.poll-text {
+  color: black;
+  font-weight: bold;
+}
+.poll-vote {
+  color: black;
+  font-weight: bold;
+  text-align: center !important;
+}
+.card-img-container {
+  position: relative;
+  top: 25%;
+  margin: 0 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.leaderboard-username {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.leaderboard-text {
+  color: black;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.leaderboard-text span {
+  float: right;
+}
+.total-card {
+  width: 90%;
+  margin: 1.5em auto;
+}
+.leaderboard-img-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.back-button {
+  position: relative;
+  bottom: 2.3em !important;
+  float: right;
+}
+.userVote {
+  position: relative;
+  float: right;
+  right: -2em;
+  top: -1.5em;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  color: orangered;
+  text-align: center;
+}
+#trophyContainer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0.8;
+  border-top: 50px solid black;
+  border-right: 50px solid transparent;
+}
+.trophy {
+  position: absolute;
+  top: -40px;
+}
+
+/* ---- Mobile View ------- */
+@media screen and (max-width: 500px) {
+  .leaderboard-text {
+    color: black;
+    font-size: 0.9em;
+    opacity: 0.7;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .leaderboard-img-wrapper {
+    margin-top: 2em;
   }
-  to {
-    transform: rotate(360deg);
+  .leaderboard-username {
+    font-size: 1.5em;
+  }
+  .newQuestion-card {
+    max-width: 350px;
+  }
+
+  .new-question input {
+    width: 300px !important;
+  }
+  .login select,
+  .login button,
+  .new-question button {
+    max-width: 300px;
+  }
+  .app-title {
+    font-size: 1.5em;
   }
 }
